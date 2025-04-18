@@ -1,0 +1,6 @@
+node_modules/
+build/
+src/components/Template/SideBar.js
+src/data/contact.js
+src/data/routes.js
+src/pages/Index.js
