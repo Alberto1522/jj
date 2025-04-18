@@ -24,10 +24,7 @@ const sections = {
 };
 
 const Resume = () => (
-  <Main
-    title="Resume"
-    description="Esto esta en resume.js"
-  >
+  <Main title="Resume" description="Esto esta en resume.js">
     <article className="post" id="resume">
       <header>
         <div className="title">

@@ -28,10 +28,7 @@ const Main = (props) => (
 );
 
 Main.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
   fullPage: PropTypes.bool,
   title: PropTypes.string,
   description: PropTypes.string,

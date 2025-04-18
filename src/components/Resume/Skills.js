@@ -6,7 +6,7 @@ import SkillBar from './Skills/SkillBar';
 
 const Skills = ({ skills, categories }) => {
   const initialButtons = Object.fromEntries(
-    [['All', false]].concat(categories.map(({ name }) => [name, false])),
+    [['All', false]].concat(categories.map(({ name }) => [name, false]))
   );
 
   const [buttons, setButtons] = useState(initialButtons);
@@ -18,7 +18,7 @@ const Skills = ({ skills, categories }) => {
         ...obj,
         [key]: label === key && !buttons[key],
       }),
-      {},
+      {}
     );
     // Turn on 'All' button if other buttons are off
     newButtons.All = !Object.keys(buttons).some((key) => newButtons[key]);
@@ -27,10 +27,7 @@ const Skills = ({ skills, categories }) => {
 
   const getRows = () => {
     // search for true active categories
-    const actCat = Object.keys(buttons).reduce(
-      (cat, key) => (buttons[key] ? key : cat),
-      'All',
-    );
+    const actCat = Object.keys(buttons).reduce((cat, key) => (buttons[key] ? key : cat), 'All');
 
     const comparator = (a, b) => {
       let ret = 0;
@@ -46,19 +43,13 @@ const Skills = ({ skills, categories }) => {
     return skills
       .sort(comparator)
       .filter((skill) => actCat === 'All' || skill.category.includes(actCat))
-      .map((skill) => (
-        <SkillBar categories={categories} data={skill} key={skill.title} />
-      ));
+      .map((skill) => <SkillBar categories={categories} data={skill} key={skill.title} />);
   };
 
-  const getButtons = () => Object.keys(buttons).map((key) => (
-    <CategoryButton
-      label={key}
-      key={key}
-      active={buttons}
-      handleClick={handleChildClick}
-    />
-  ));
+  const getButtons = () =>
+    Object.keys(buttons).map((key) => (
+      <CategoryButton label={key} key={key} active={buttons} handleClick={handleChildClick} />
+    ));
 
   return (
     <div className="skills">
@@ -82,13 +73,13 @@ Skills.propTypes = {
       title: PropTypes.string,
       competency: PropTypes.number,
       category: PropTypes.arrayOf(PropTypes.string),
-    }),
+    })
   ),
   categories: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
       color: PropTypes.string,
-    }),
+    })
   ),
 };
 

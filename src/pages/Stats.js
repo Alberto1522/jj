@@ -7,10 +7,7 @@ import Personal from '../components/Stats/Personal';
 import Site from '../components/Stats/Site';
 
 const Stats = () => (
-  <Main
-    title="Stats"
-    description="Esto esta en el archivo stats.js"
-  >
+  <Main title="Stats" description="Esto esta en el archivo stats.js">
     <article className="post" id="stats">
       <header>
         <div className="title">

@@ -13,7 +13,8 @@ const degrees = [
   },
   {
     school: 'Centro de estudios técnicos Duque de Alba',
-    degree: 'Montaje y reparación de sistemas microinformáticos Certificado de Profesionalidad IFCT0309',
+    degree:
+      'Montaje y reparación de sistemas microinformáticos Certificado de Profesionalidad IFCT0309',
     link: 'http://iesalonsodemadrigal.centros.educa.jcyl.es/sitio/index.cgi',
     year: 2017,
   },

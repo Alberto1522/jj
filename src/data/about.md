@@ -21,7 +21,6 @@ Con una formación en ciberseguridad, cloud computing y infraestructura de redes
 - Podcasts.
 - [Fotografia](https://instagram.com/).
 
-
 # Datos curiosos
 
 - El cerebro humano tiene más conexiones que estrellas en la Vía Láctea
@@ -39,4 +38,3 @@ Con una formación en ciberseguridad, cloud computing y infraestructura de redes
 - Tratar a cada individuo con amabilidad y respeto genuino.
 - Siempre mantenerme curioso.
 - Mejorar continuamente.
-

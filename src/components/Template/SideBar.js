@@ -22,8 +22,8 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-      Administrador de Sistemas | Especialista en Gestión de Infraestructuras, 
-      Soporte Técnico, Optimización de Redes y Ciberseguridad.
+        Administrador de Sistemas | Especialista en Gestión de Infraestructuras, Soporte Técnico,
+        Optimización de Redes y Ciberseguridad.
       </p>
       <ul className="actions">
         <li>
@@ -42,9 +42,7 @@ const SideBar = () => (
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">
-        &copy; Roberto García Villaverde.
-      </p>
+      <p className="copyright">&copy; Roberto García Villaverde.</p>
     </section>
   </section>
 );

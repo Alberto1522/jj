@@ -3,11 +3,7 @@ import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 import Markdown from 'markdown-to-jsx';
 
-const Job = ({
-  data: {
-    name, position, url, startDate, endDate, summary, highlights,
-  },
-}) => (
+const Job = ({ data: { name, position, url, startDate, endDate, summary, highlights } }) => (
   <article className="jobs-container">
     <header>
       <h4>

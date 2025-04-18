@@ -9,9 +9,7 @@ const validateText = (text) => {
   return re.test(text) || text.length === 0;
 };
 
-const messages = [
-
-];
+const messages = [];
 
 const useInterval = (callback, delay) => {
   const savedCallback = useRef();
@@ -61,7 +59,7 @@ const EmailLink = ({ loopMessage }) => {
         updateChar(newChar + 1);
       }
     },
-    isActive ? delay : null,
+    isActive ? delay : null
   );
 
   return (
